@@ -254,7 +254,7 @@ main{
   width: 450px;
   height: auto;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 90px;
   /*background: red;*/
   margin: 19px;
 }
@@ -273,6 +273,6 @@ figure {
     border-radius: 40px;
 }
 
-#post:hover :not(:hover){
-  opacity: .6px;
+#post{
+  box-shadow: 5px 5px 5px 5px #f7f4f2;
 }

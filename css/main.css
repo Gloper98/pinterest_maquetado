@@ -1,12 +1,15 @@
-
-body{
-  padding-top: 3px;
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+    display: none;
 }
 
 form{
+  /*outline: 1px solid blue;*/
   width: 1100px;
   background: #d7dfe0;
-  margin: 0 auto;
+  margin: 0 solid;
   border-radius: 5px;
   height: 40px;
 }
@@ -14,7 +17,7 @@ form{
 fieldset{
  display: inline-block;
  border: 1px;
- padding-left: 110px;
+ padding-left: 0px;
  padding-right: 0px;
  padding-top: 0px;
  padding-bottom: 0px;
@@ -72,35 +75,146 @@ input:focus + button .icon-search{
   transition-duration: .3s;
 }
 
-.icon-x{
-  text-decoration: none;
-  color: black;
-  font-family: sans-serif;
-  margin: 0;
-}
-
-<!--.word{
-  font-family: sans-serif;
-  margin: 0;
-}-->
-
-/*.icon-keyboard_arrow_down{
-  font-size: 30px;
-  text-decoration: none;
-  color: black;
-  margin-left: 10px;
-  margin-top: 10px;
+/*.pinterestlogo{
+  width: 60px;
+  height: 60px;
 }*/
 
-#menu{
-  display: position;
-  display: inline-block;
+ul:first-child{
+  margin-left: 0;
+}
+
+.firstlist{
+  /*outline: 1px solid blue;*/
+  list-style: none;
   padding: 0;
-  margin: 10px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  text-align: center;
 }
 
-/*img.pinterestlogo{
-  outline: 1px solid red;
-  width: 38px;
-  height: 38px;
-}*/
+li{
+  /*outline: 1px solid black;*/
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.icon-user{
+  font-size: 50px;
+  color: #c5cbd6;
+}
+
+.icon-menu{
+  font-size: 50px;
+  color: #c5cbd6;
+}
+
+.icon-message-circle{
+  font-size: 50px;
+  color: #c5cbd6;
+}
+
+.menu1{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.color1{
+  background: #664a31;
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: 30px;
+}
+
+.color2{
+  background: #96806c;
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.color3{
+  background-image: url("../assets/imagen/brown.png");
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.color4{
+  background: #966b45;
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.color5{
+  background: #968945;
+  width: 110px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.color6{
+  background: #7c723e;
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.color7{
+  background-image: url("../assets/imagen/marmol.jpg");
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.color8{
+  background: #a37628;
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.color9{
+  background: #bc9a80;
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.pinterestlogo:hover{
+  opacity: 0.4;
+}
+
+#menu2:hover{
+  opacity: 0.3;
+}

@@ -217,4 +217,29 @@ a{
 
 #menu2:hover{
   opacity: 0.3;
+  box-shadow: 2px 3px 3px #a5a09b;
+}
+
+#menu2 a:active{
+  color:red;
+}
+
+.icon-user:hover{
+  color: grey;
+}
+
+.icon-message-circle:hover{
+  color: grey;
+}
+
+.icon-menu:hover{
+  color: grey;
+}
+
+a p{
+  color: #000;
+}
+
+a h2{
+  color:#000;
 }

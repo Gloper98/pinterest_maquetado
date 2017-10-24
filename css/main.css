@@ -5,6 +5,16 @@ input[type='search']::-webkit-search-results-decoration {
     display: none;
 }
 
+header{
+	background: #fff;
+	height: 100px;
+
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+
 form{
   /*outline: 1px solid blue;*/
   width: 1100px;
@@ -236,6 +246,12 @@ a{
   color: grey;
 }
 
+h4{
+  color:grey;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
 a p{
   color: #000;
 }
@@ -248,6 +264,7 @@ main{
   width: 98%;
   max-width: 1500px;
   margin: 0 auto;
+  margin-top: 200px;
 }
 
 #post{
@@ -275,4 +292,8 @@ figure {
 
 #post{
   box-shadow: 5px 5px 5px 5px #f7f4f2;
+}
+
+h4:hover{
+  color: red;
 }

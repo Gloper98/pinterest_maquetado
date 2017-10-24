@@ -1,0 +1,38 @@
+body{
+  background: #E8E2E2;
+}
+.scrollbar {
+    background-color: #E8E2E2;
+    float: left;
+    height: 300px;
+    margin-bottom: 25px;
+    margin-left: 22px;
+    margin-top: 40px;
+    width: 65px;
+    overflow-y: scroll;
+}
+
+.force-overflow {
+    min-height: 450px;
+}
+
+.content{
+  background:
+}
+
+#style-1::-webkit-scrollbar {
+    width: 6px;
+    background-color: #E8E2E2;
+}
+
+#style-1::-webkit-scrollbar-thumb {
+    background-color: #E8E2E2;
+}
+
+.content{
+  background: #fff;
+  width: 750px;
+  height: 2000px;
+  border-radius: 10px;
+  margin: 30px 375px 20px 375px;
+}

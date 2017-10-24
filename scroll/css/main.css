@@ -32,7 +32,7 @@ body{
 .content{
   background: #fff;
   width: 750px;
-  height: 2000px;
+  height: auto;
   border-radius: 10px;
   margin: 20px 350px 20px 350px;
   padding: 40px;
@@ -67,4 +67,18 @@ button{
 
 span:hover{
   color:grey;
+}
+
+h1{
+  margin-bottom: 0px;
+  margin-top: 70px;
+  margin-left: 110px;
+  font-family: sans-serif;
+}
+
+img{
+  border-radius: 10px;
+  margin-top: 0px;
+  margin-left: 110px;
+  margin-top: 30px;
 }

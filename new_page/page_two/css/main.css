@@ -49,7 +49,7 @@ span{
   float: right;
 }
 button{
-  background-image: url("../../assets/imagen/save.png");
+  background-image: url("../../../assets/imagen/save.png");
   height: 50px;
   width: 100px;
   border: none;

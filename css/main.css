@@ -1,3 +1,6 @@
+
+/*Eliminamos el boton de cancelar que viene por default en el formulario*/
+
 input[type='search']::-webkit-search-decoration,
 input[type='search']::-webkit-search-cancel-button,
 input[type='search']::-webkit-search-results-button,
@@ -5,22 +8,29 @@ input[type='search']::-webkit-search-results-decoration {
     display: none;
 }
 
+/*Colocamos al navegador fondo blanco*/
+
 .nav {
   background: #fff;
 }
 
+/*Elegimos las propiedaes para nuestro header(Muy importante que este fijo)*/
+
 header{
     background: #fff;
     height: 110px;
-    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
-    left: 0; /* Posicionamos la cabecera al lado izquierdo */
-    top: 0; /* Posicionamos la cabecera pegada arriba */
-    position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    width: 100%; /* hacemos que  ocupe el ancho total de la página */
+    left: 0;
+    top: 0;
+    position: fixed;
     padding-bottom: 0px;
 }
+
+/*Elegimos propiedades para el formulario*/
+
 form{
   /*outline: 1px solid blue;*/
-  -webkit-width: 80%;
+  -webkit-width: 80%; /* le coloque el webkit para que se adapte a la pantalla(solo deberia funcionar con chrome)*/
   background: #d7dfe0;
   margin: 3px;
   border-radius: 5px;
@@ -28,6 +38,9 @@ form{
   padding-right: 20px;
   padding-top: 0px;
 }
+
+
+
 fieldset{
  display: inline-block;
  border: 1px;
@@ -38,6 +51,7 @@ fieldset{
  /*width: 40px;*/
 }
 
+/*En este ejercicio intente hacer un efecto con el boton que le agregue al formulario*/
 
 input, button{
   position: relative;
@@ -45,6 +59,9 @@ input, button{
   height: 40px;
   padding: 0px;
 }
+
+/*Le coloque un z index al input para que cubra al boton*/
+
 input{
   border: none;
   color: #4f5354;
@@ -52,35 +69,61 @@ input{
   z-index: 2;
   background: #d7dfe0;
 }
+
+
+
 button{
   width: 50px;
   /*width: 50px;*/
-  border: none;
+  border: none; /*Le quito propiedad que tiene por default*/
   font-size: 16px;;
-  transform: translate(-95%,0);
-  transition-duration: .3s;
+  transform: translate(-95%,0); /*Elijo la distacia que el boton debe recorrer*/
+  transition-duration: .3s;/*Elijo el tiempo*/
 }
+
+/*Le quito propiedad que tiene por default*/
 button:focus{
   outline: none;
 }
+
+/*Boton con el que intente hacer el efecto*/
+
 .icon-zoom{
   font-size: 20px;
   color: #464949;
-  -webkit-transform: translate(-100%,0);
-  transition: all   .1s ease-in-out;
+  -webkit-transform: translate(-100%,0);/*Inicialmene no le habia colocado el webkit, pero se deformaba en monitores mas pequeños, asi que probe coloandolo*/
+  transition: all   .1s ease-in-out;/*le coloco el efecto easy-in-out*/
 }
+
+/*Le quito al input propiedad por default*/
+
 input:focus{
   outline: none;
 }
+
+/*Seguimos con el efecto*/
+
 input:focus + button{
   transform: translate(0,0);
   transition-duration: .3s;
 }
+/*          |
+            |
+    Estos dos trozos de codigo hacen un pequeño
+     juego entre el boton y el icono que lo acompaña
+     para que asi uno llegue despues que el otro.
+           |
+           |*/
+
 input:focus + button .icon-search{
   color: #c41111;
   transform: translate(0,0);
   transition-duration: .3s;
 }
+
+/*El siguiente codigo son caracteristicas generales de posicion, ancho, alto y organizacion*/
+
+
 /*.pinterestlogo{
   width: 60px;
   height: 60px;
@@ -272,6 +315,8 @@ h4:hover{
   color: red;
 }
 
+/*Le coloco la forma redondeada al div del articulo*/
+
 .circle {
   width: 30px;
   height: 30px;
@@ -280,7 +325,7 @@ h4:hover{
   text-align: center;
   float: left;
   color: #fff;
-  font-family: monospace;
+  font-family: monospace; /*Elegimos la fuente*/
   font-size: 20px;
   line-height: 30px;
   margin-right: 5px;
